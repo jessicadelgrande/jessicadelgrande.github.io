@@ -145,6 +145,7 @@ section {
 
 .bio__text--wrapper {
   justify-self: center;
+  margin: 0 auto;
   width: 70vw;
 }
 
