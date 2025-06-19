@@ -276,14 +276,11 @@ summary {
 
 .rps__image--container {
   display: flex;
-  height: 200px;
-  margin-top: -50px;
-  overflow: hidden;
 }
 
 .rps__hero--image {
   align-self: center;
-  height: 400px;
+  height: 250px;
 }
 
 .rps__text {
