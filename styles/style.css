@@ -105,7 +105,7 @@ section {
   width: clamp(360px, 80vw, 90vw);
 }
 
-.about__text {
+.title__text {
   font-family: var(--display-font-family);
   font-size: var(--display-font-size);
   margin: 16px auto;
@@ -145,6 +145,7 @@ section {
 
 .bio__text--wrapper {
   justify-self: center;
+  margin: 0 auto;
   width: 70vw;
 }
 
@@ -152,6 +153,22 @@ section {
   font-size: 1.5rem;
   margin: 24px auto;
   text-align: left;
+}
+
+.portfolio__section {
+  display: grid;
+  grid-gap: 24px;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  width: 100%;
+}
+
+.portfolio__section--wrapper {
+  justify-self: center;
+  width: 70vw;
+}
+
+.details__text--headline {
+  font-variation-settings: 'wght' 700; 
 }
 
 .projects--wrapper {
@@ -286,10 +303,6 @@ summary {
 .rps__text {
   font-size: 1rem;
   line-height: 1.5rem;
-}
-
-.rps__text--headline {
-  font-variation-settings: 'wght' 700;
 }
 
 .rps__prototypes {
