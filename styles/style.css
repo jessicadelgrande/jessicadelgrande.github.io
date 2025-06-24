@@ -105,7 +105,7 @@ section {
   width: clamp(360px, 80vw, 90vw);
 }
 
-.about__text {
+.title__text {
   font-family: var(--display-font-family);
   font-size: var(--display-font-size);
   margin: 16px auto;
@@ -155,29 +155,61 @@ section {
   text-align: left;
 }
 
-.projects--wrapper {
-  margin: 0 auto;
-  width: 80vw;
+.portfolio__section {
+  display: grid;
+  grid-gap: 24px;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  width: 100%;
 }
 
-.project--wrapper {
-  border: 24px solid transparent;
-  border-radius: 16px;
-  margin-bottom: 1px;
-  outline: 1px solid var(--accent-2);
+.portfolio__section--wrapper {
+  justify-self: center;
+  width: 70vw;
 }
 
-.projects__text {
-  color: var(--accent);
-  font-family: var(--display-font-family);
-  font-size: var(--display-font-size);
-  text-align: center;
+.portfolio__item {
+  margin: 8px;
 }
 
-.project__text {
-  font-family: var(--display-font-family);
-  font-size: 1.5rem;
-  text-align: center;
+.portfolio__item--headline {
+  font-variation-settings: 'wght' 700; 
+  margin-left: 8px;
+}
+
+.portfolio__item--details {
+  display: flex;
+  gap: 16px;
+}
+
+.portfolio__item--image-wrapper {
+  background-position: center;
+  background-size: cover;
+  border: 1px solid var(--accent-2);
+  border-radius: 8px;
+  height: 100px;
+  overflow: hidden;
+  margin: 8px;
+  min-width: 140px;
+}
+
+#portfolio__ask-the-tarot {
+  background-image: url("../assets/askthetarot_thumb.jpg");
+}
+
+#portfolio__what-is-everyone-reading {
+  background-image: url("../assets/whatiseveryonereading_thumb.jpg");
+}
+
+#portfolio__canadian-ipsum {
+  background-image: url("../assets/canadianipsum_thumb.jpg");
+}
+
+#portfolio__learn-anatomy {
+  background-image: url("../assets/learnanatomy_thumb.jpg");
+}
+
+.portfolio__item--text {
+  margin: 8px 16px 0 0;
 }
 
 .social--wrapper {
@@ -287,10 +319,6 @@ summary {
 .rps__text {
   font-size: 1rem;
   line-height: 1.5rem;
-}
-
-.rps__text--headline {
-  font-variation-settings: 'wght' 700;
 }
 
 .rps__prototypes {
