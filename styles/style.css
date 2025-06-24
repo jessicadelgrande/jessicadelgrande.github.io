@@ -212,6 +212,10 @@ section {
   margin: 8px 16px 0 0;
 }
 
+.portfolio__link {
+  color: var(--accent);
+}
+
 .social--wrapper {
   display: flex;
   justify-content: center;
