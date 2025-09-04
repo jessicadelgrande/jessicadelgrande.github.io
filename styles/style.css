@@ -178,6 +178,7 @@ section {
 
 .portfolio__item--details {
   display: flex;
+  flex-direction: column;
   gap: 16px;
 }
 
@@ -186,7 +187,7 @@ section {
   background-size: cover;
   border: 1px solid var(--accent-2);
   border-radius: 8px;
-  height: 100px;
+  height: 300px;
   overflow: hidden;
   margin: 8px;
   min-width: 140px;
@@ -251,6 +252,14 @@ i {
 @media screen and (min-width: 768px) {
   .bio__image--container {
     width: 35vw;
+  }
+
+  .portfolio__item--details {
+    flex-direction: row;
+  }
+
+  .portfolio__item--image-wrapper {
+    height: 100px;
   }
 }
 
